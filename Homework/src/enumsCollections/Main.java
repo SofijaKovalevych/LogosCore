@@ -30,9 +30,9 @@ public class Main {
 			System.out.println("Debil");
 		}
 		
-		boolean marcer = true;
+		boolean marker = true;
 	
-		while(marcer) {
+		while(marker) {
 			System.out.println("Enter 1 add student");
 			System.out.println("Enter 2 to view course");			
 			System.out.println("Enter 3 to exit");			
@@ -45,7 +45,7 @@ public class Main {
 				viewMyCoustomCourse(myCourse);
 				break;
 				case "3":
-					marcer = false;
+					marker = false;
 					break;
 			default:
 				return;

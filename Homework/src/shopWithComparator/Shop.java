@@ -15,7 +15,7 @@ public class Shop {
 	public void addTovar() {
 		System.out.println("**********Product options*************");
 		System.out.println("Product name: ");
-		String name = sc.nextLine();
+		String name = sc.next();
 		System.out.println("Price: ");
 		int price = sc.nextInt();
 		System.out.println("Wight: ");
@@ -62,7 +62,7 @@ public class Shop {
 	}
 
 	public Stream<Comodity> sortByName() {
-		return List.stream().sorted();
+		return List.stream().sorted((o1, o2)->o1.getName().compareTo(o2.getName()));
 	}
 
 	public Stream<Comodity> sortByLenght() {

@@ -39,8 +39,18 @@ public class Controller {
 	}
 
 	public void print() {
-		if(!map.isEmpty())map.forEach((key, value) -> System.out.println(key+" -> "+value));
-		else System.out.println("Zoo is empty");
+		if (!map.isEmpty())
+			map.forEach((key, value) -> System.out.println(key + " -> " + value));
+		else
+			System.out.println("Zoo is empty");
+	}
+
+	public Map<Person, List<Pet>> getMap() {
+		return map;
+	}
+
+	public void setMap(Map<Person, List<Pet>> map) {
+		this.map = map;
 	}
 
 }
